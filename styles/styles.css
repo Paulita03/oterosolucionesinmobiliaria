@@ -540,14 +540,14 @@ footer a {
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: rgba(30, 30, 30, 0.8) !important;
+    background-color: rgba(30, 30, 30, 0.8)
     backdrop-filter: blur(6px);
 }
 
 
 /* Marca */
 .barra-navegacion .navbar-brand {
-    color: #c2b59b !important;
+    color: #c2b59b 
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -556,14 +556,14 @@ footer a {
 
 /* Links */
 .barra-navegacion .nav-link {
-    color: #e6e6e6 !important;
+    color: #e6e6e6 
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .barra-navegacion .nav-link:hover {
-    color: #c2b59b !important;
+    color: #c2b59b 
 }
 
 /* margen  */
