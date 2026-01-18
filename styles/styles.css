@@ -726,3 +726,17 @@ footer a {
         text-align: center;
     }
 }
+/* BOTONES CENTRADOS */
+
+.card-propiedad,
+.card-alquiler,
+.card-venta {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-propiedad button,
+.card-alquiler button,
+.card-venta button {
+  align-self: center;
+}
