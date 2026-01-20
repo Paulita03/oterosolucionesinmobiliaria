@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *; 
+
+/*  FOOTER  */
+
+footer {
+  background-color: $color_negro_base;
+  padding: 50px 40px;
+  margin-top: 80px;
+}
+
+footer .contacto {
+  max-width: $ancho_maximo_contenido;
+  margin: 0 auto;
+}
+
+footer h3 {
+  color: $fondo_blanco;
+  font-size: $tamano_titulo_chico;
+  margin-bottom: $margen_medio;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  color: $color_texto_gris_claro;
+  font-size: $tamano_texto_medio;
+  margin-bottom: $margen_chico;
+}
+
+footer a {
+  color: $fondo_blanco;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: $color_negro_base;
+  border-top: $borde_superior_footer solid $color_verde_principal;
+}
+
+footer h3 {
+  color: $fondo_blanco;
+}
+
+footer a {
+  color: $color_link_footer;
+}

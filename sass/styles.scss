@@ -1,18 +1,17 @@
-nav.navbar.barra-navegacion {
-  background-color: rgba(30, 30, 30, 0.85);
+@use "utilities/variables";
+@use "utilities/mixin";
+@use "utilities/animaciones";
 
-  a.navbar-brand {
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 600;
-  }
+@use "base/reset";
+@use "base/general";
 
-  a.nav-link {
-    color: #e6e6e6;
-  }
+@use "layout/header";
+@use "layout/navbar";
+@use "layout/main";
+@use "layout/footer";
+@use "layout/responsive";
 
-  a.nav-link:hover {
-    color: #c2b59b;
-  }
-}
+@use "components/cards";
+@use "components/contacto";
+@use "components/nosotros";
 

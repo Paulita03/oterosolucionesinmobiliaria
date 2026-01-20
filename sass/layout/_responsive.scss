@@ -1,0 +1,117 @@
+@use "../utilities/variables" as *; 
+
+/*  RESPONSIVE  */
+@media (max-width: $corte_mobile) {
+
+  /* NOSOTROS */
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 25px;
+  }
+
+  .nosotros-grid section {
+    padding: 25px;
+  }
+
+  .nosotros-grid h2 {
+    font-size: $tamano_titulo_chico;
+  }
+
+  .nosotros-grid p {
+    font-size: $tamano_texto_medio;
+  }
+}
+
+/* CONTACTO */
+@media (max-width: $corte_mobile) {
+  .contacto-page {
+    padding: $padding_medio;
+  }
+
+  .contacto-form {
+    padding: $padding_medio;
+  }
+
+  .contacto-page h2 {
+    font-size: 24px;
+  }
+
+  .contacto-form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: $corte_mobile) {
+  main {
+    padding: $padding_medio;
+  }
+}
+
+@media (max-width: $corte_mobile) {
+
+  /* HEADER */
+  .header-contenido {
+    padding: $padding_medio;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: $gap_chico;
+  }
+
+  /* PORTADA */
+  .portada {
+    height: $alto_portada_mobile;
+  }
+
+  /* PROPIEDADES INDEX */
+  .contenedor-propiedades {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ALQUILERES */
+  .contenedor-alquileres {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-alquiler {
+    width: 100%;
+    max-width: $ancho_card_mobile_max;
+  }
+
+  /* VENTAS */
+  .contenedor-ventas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-venta {
+    width: 100%;
+    max-width: $ancho_card_mobile_max;
+  }
+
+  /* NOSOTROS */
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  /* CONTACTO */
+  .contacto-page {
+    padding: 0 $padding_chico;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+

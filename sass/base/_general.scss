@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *; 
+
+body{
+    font-family: $fuente_principal;
+    background-color: $fondo_blanco;
+    color: $color_texto_base;
+}
+
+main{
+    padding: $padding_grande;
+}
+
+section{
+    margin-bottom: $margen_seccion;
+}

@@ -1,0 +1,38 @@
+@use "../utilities/variables" as *; 
+
+.site-header {
+    background-color: $color_negro_base;
+}
+
+.header-contenido {
+    max-width: $ancho_maximo_contenido;
+    margin: 0 auto;
+    padding: $padding_medio $padding_grande;
+
+    display: flex;
+    flex-direction: column;
+    gap: $gap_chico;
+}
+
+.logo {
+    color: #dad7c3;
+    font-size: $tamano_logo_header;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: $gap_medio;
+}
+
+.nav a {
+    color: $color_texto_nav_gris;
+    text-decoration: none;
+    font-size: $tamano_texto_base;
+}
+
+.nav a:hover {
+  color: $fondo_blanco;
+  text-decoration: underline;
+}
+

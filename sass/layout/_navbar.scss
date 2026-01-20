@@ -1,0 +1,41 @@
+@use "../utilities/variables" as *; 
+
+/*  BARRA DE NAVEGACIÓN  */
+.barra-navegacion {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  padding: $padding_medio 0;
+  background-color: $fondo_navbar_transparente;
+  backdrop-filter: blur($blur_navbar);
+}
+
+.barra-navegacion .navbar-brand {
+  color: $color_beige_principal;
+  font-size: $tamano_marca_navbar;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.barra-navegacion .nav-link {
+  color: $color_texto_nav_claro;
+  font-size: $tamano_texto_chico;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.barra-navegacion .nav-link:hover {
+  color: $color_beige_principal;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border-color: $color_borde_navbar;
+}
+
+/* margen  */
+.navbar {
+  margin-bottom: 0;
+}

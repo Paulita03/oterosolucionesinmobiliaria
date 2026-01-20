@@ -1,0 +1,59 @@
+@use "../utilities/variables" as *; 
+
+/*  PORTADA  */
+.portada {
+  width: 100%;
+  height: $alto_portada_grande;
+  overflow: hidden;
+}
+
+.portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  }
+
+  /* PROPIEDADES INDEX */
+.contenedor-propiedades {
+  display: flex;
+  gap: $gap_grande;
+  flex-wrap: wrap;
+}
+
+
+/* ALQUILERES  */
+.alquileres {
+  background-color: $fondo_gris_claro;
+  padding: $padding_seccion $padding_grande;
+}
+
+.alquileres h2 {
+  font-size: $tamano_titulo_grande;
+  color: $color_negro_base;
+  margin-bottom: 40px;
+}
+
+.contenedor-alquileres {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* VENTAS  */
+.ventas {
+  padding: 60px 40px;
+  background-color: $fondo_gris_medio;
+}
+
+.ventas h2 {
+  font-size: $tamano_titulo_medio;
+  margin-bottom: 30px;
+  color: $color_negro_base;
+}
+
+.contenedor-ventas {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}

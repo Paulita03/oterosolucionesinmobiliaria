@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *; 
+
+/* NOSOTROS - GRID*/
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gap_grande;
+  padding: 60px;
+  background-color: $fondo_gris_muy_claro;
+}
+
+.nosotros-grid section:first-child {
+  grid-column: 1 / -1;
+}
+
+.nosotros-grid section {
+  background-color: $fondo_blanco;
+  padding: $padding_grande;
+  border-radius: $radio_grande;
+  box-shadow: $sombra_card_fuerte;
+}
+
+.nosotros-grid h2 {
+  font-size: $tamano_titulo_medio;
+  margin-bottom: 15px;
+  color: $color_negro_base;
+}
+
+.nosotros-grid p {
+  font-size: $tamano_texto_grande;
+  line-height: 1.6;
+  color: $color_texto_gris_oscuro;
+}
+
+.nosotros-grid section:nth-child(2) {
+  background-color: $color_negro_base;
+}
+
+.nosotros-grid section:nth-child(2) h2,
+.nosotros-grid section:nth-child(2) p {
+  color: $fondo_blanco;
+}
+
+

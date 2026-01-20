@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *; 
+
+@mixin boton_simple {
+  border: none;
+  cursor: pointer;
+  border-radius: $radio_chico;
+}
+
+@mixin card_simple {
+  background-color: $fondo_blanco;
+  border-radius: $radio_extra;
+  box-shadow: $sombra_card_media;
+}

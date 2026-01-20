@@ -1,0 +1,74 @@
+@use "../utilities/variables" as *; 
+@use "../utilities/mixin" as *; 
+
+
+/*  CONTACTO  */
+
+.contacto-page {
+  max-width: $ancho_formulario;
+  margin: 0 auto;
+}
+
+.contacto-page h2 {
+  font-size: $tamano_titulo_grande;
+  margin-bottom: $margen_chico;
+}
+
+.contacto-page p {
+  color: $color_texto_gris;
+  margin-bottom: 30px;
+}
+
+.contacto-form {
+  background-color: $fondo_formulario;
+  padding: $padding_medio;
+  border-radius: $radio_medio;
+}
+
+.contacto-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $margen_medio;
+}
+
+.contacto-form label {
+  font-size: $tamano_texto_base;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: $padding_chico;
+  border: 1px solid #ccc;
+  font-family: $fuente_principal;
+  font-size: $tamano_texto_base;
+  border-radius: $radio_chico;
+}
+
+.contacto-form textarea {
+  resize: vertical;
+  min-height: $alto_textarea_minimo;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-color: $color_negro_base;
+}
+
+
+.contacto-form button {
+  @include boton_simple;
+
+  background-color: $color_negro_base;
+  color: $fondo_blanco;
+  padding: 12px 20px;
+  font-size: $tamano_texto_base;
+  border-radius: $radio_chico;
+  width: fit-content;
+}
+
+.contacto-form button:hover {
+  background-color: #000;
+}
