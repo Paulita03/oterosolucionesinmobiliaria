@@ -11,23 +11,30 @@
     </head>
 
 <body>
-    <header class="site-header">
-            <div class="header-contenido">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container contenedor-menu">
 
-                <div class="logo">
-                    Otero Soluciones Inmobiliarias
-                </div>
+    <a class="navbar-brand logo-principal" href="../index.html">
+      Otero Soluciones Inmobiliarias
+    </a>
 
-                <nav class="nav">
-                    <a href="../index.html">Inicio</a>
-                    <a href="./alquileres.html">Alquileres</a>
-                    <a href="./venta.html">Venta</a>
-                    <a href="./nosotros.html">Nosotros</a>
-                    <a href="./contacto.html">Contacto</a>
-                </nav>
+    <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            </div>
-        </header>
+    <div class="collapse navbar-collapse menu-links" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto lista-links">
+        <li class="nav-item"><a class="nav-link link-menu" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link link-menu" href="./alquileres.html">Alquileres</a></li>
+        <li class="nav-item"><a class="nav-link link-menu" href="./venta.html">Venta</a></li>
+        <li class="nav-item"><a class="nav-link link-menu" href="./nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link link-menu" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
 
 
     <main class="nosotros-grid">
