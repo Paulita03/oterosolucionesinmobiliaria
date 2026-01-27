@@ -41,10 +41,12 @@
 }
 
 
-.navbar.navbar-dark .navbar-brand.logo-principal {
-  color: $color_beige_principal;
+/* COLOR DEL LOGO */
+.barra-navegacion {
+  --bs-navbar-brand-color: #dad7c3;
+  --bs-navbar-brand-hover-color: #dad7c3;
 }
 
-.navbar.navbar-dark .navbar-brand.logo-principal:hover {
-  color: $color_beige_principal;
+.barra-navegacion .navbar-brand.logo-principal {
+  color: var(--bs-navbar-brand-color);
 }

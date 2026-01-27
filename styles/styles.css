@@ -117,12 +117,14 @@ section {
   margin-bottom: 0;
 }
 
-.navbar.navbar-dark .navbar-brand.logo-principal {
-  color: #c2b59b;
+/* COLOR DEL LOGO */
+.barra-navegacion {
+  --bs-navbar-brand-color: #dad7c3;
+  --bs-navbar-brand-hover-color: #dad7c3;
 }
 
-.navbar.navbar-dark .navbar-brand.logo-principal:hover {
-  color: #c2b59b;
+.barra-navegacion .navbar-brand.logo-principal {
+  color: var(--bs-navbar-brand-color);
 }
 
 /*  PORTADA  */
