@@ -39,3 +39,12 @@
 .navbar {
   margin-bottom: 0;
 }
+
+
+.navbar.navbar-dark .navbar-brand.logo-principal {
+  color: $color_beige_principal;
+}
+
+.navbar.navbar-dark .navbar-brand.logo-principal:hover {
+  color: $color_beige_principal;
+}
