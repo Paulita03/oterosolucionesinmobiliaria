@@ -50,3 +50,18 @@
 .barra-navegacion .navbar-brand.logo-principal {
   color: var(--bs-navbar-brand-color);
 }
+
+
+/* Logo: forzar color sobre Bootstrap */
+.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal,
+.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:visited,
+.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:hover,
+.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:focus {
+  color: $color_beige_principal;
+  text-decoration: none;
+}
+
+.navbar {
+  --bs-navbar-brand-color: #c2b59b;
+  --bs-navbar-brand-hover-color: #c2b59b;
+}
