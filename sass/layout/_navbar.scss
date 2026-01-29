@@ -1,67 +1,42 @@
 @use "../utilities/variables" as *; 
 
-/*  BARRA DE NAVEGACIÓN - NAVBAR BOOTSTRAP  */
 
-.navbar {
+/* NAVBAR BOOTSTRAP (barra negra + logo beige) */
+.navbar.barra-navegacion {
   margin-bottom: 0;
 }
 
-.navbar.navbar-dark {
-  background-color: $fondo_navbar_transparente;
-  backdrop-filter: blur($blur_navbar);
+/* Si querés el negro exacto de tu diseño (en vez del bg-dark de Bootstrap) */
+.navbar.barra-navegacion.bg-dark {
+  background-color: #1e1e1e;
 }
 
-.navbar.navbar-dark .navbar-brand.logo-principal {
+/* Logo beige (gana siempre) */
+.navbar.barra-navegacion .navbar-brand.logo-principal,
+.navbar.barra-navegacion .navbar-brand.logo-principal:hover,
+.navbar.barra-navegacion .navbar-brand.logo-principal:focus,
+.navbar.barra-navegacion .navbar-brand.logo-principal:visited {
   color: $color_beige_principal;
   font-size: $tamano_marca_navbar;
   font-weight: 600;
   letter-spacing: 0.8px;
+  text-decoration: none;
 }
 
-.navbar.navbar-dark .nav-link.link-menu {
+/* Links */
+.navbar.barra-navegacion .nav-link.link-menu {
   color: $color_texto_nav_claro;
   font-size: $tamano_texto_chico;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.navbar.navbar-dark .nav-link.link-menu:hover {
+.navbar.barra-navegacion .nav-link.link-menu:hover {
   color: $color_beige_principal;
   text-decoration: underline;
 }
 
 /* Botón hamburguesa */
-.navbar-toggler {
+.navbar.barra-navegacion .navbar-toggler {
   border-color: $color_borde_navbar;
-}
-
-/* margen  */
-.navbar {
-  margin-bottom: 0;
-}
-
-
-/* COLOR DEL LOGO */
-.barra-navegacion {
-  --bs-navbar-brand-color: #dad7c3;
-  --bs-navbar-brand-hover-color: #dad7c3;
-}
-
-.barra-navegacion .navbar-brand.logo-principal {
-  color: var(--bs-navbar-brand-color);
-}
-
-
-/* Logo: forzar color sobre Bootstrap */
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:visited,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:hover,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:focus {
-  color: $color_beige_principal;
-  text-decoration: none;
-}
-
-.navbar {
-  --bs-navbar-brand-color: #c2b59b;
-  --bs-navbar-brand-hover-color: #c2b59b;
 }

@@ -43,6 +43,20 @@ section {
   margin-bottom: 60px;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .site-header {
   background-color: #1e1e1e;
 }
@@ -78,67 +92,44 @@ section {
   text-decoration: underline;
 }
 
-/*  BARRA DE NAVEGACIÓN - NAVBAR BOOTSTRAP  */
-.navbar {
+/* NAVBAR BOOTSTRAP (barra negra + logo beige) */
+.navbar.barra-navegacion {
   margin-bottom: 0;
 }
 
-.navbar.navbar-dark {
-  background-color: rgba(30, 30, 30, 0.8);
-  backdrop-filter: blur(6px);
+/* Si querés el negro exacto de tu diseño (en vez del bg-dark de Bootstrap) */
+.navbar.barra-navegacion.bg-dark {
+  background-color: #1e1e1e;
 }
 
-.navbar.navbar-dark .navbar-brand.logo-principal {
+/* Logo beige (gana siempre) */
+.navbar.barra-navegacion .navbar-brand.logo-principal,
+.navbar.barra-navegacion .navbar-brand.logo-principal:hover,
+.navbar.barra-navegacion .navbar-brand.logo-principal:focus,
+.navbar.barra-navegacion .navbar-brand.logo-principal:visited {
   color: #c2b59b;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.8px;
+  text-decoration: none;
 }
 
-.navbar.navbar-dark .nav-link.link-menu {
+/* Links */
+.navbar.barra-navegacion .nav-link.link-menu {
   color: #e6e6e6;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.navbar.navbar-dark .nav-link.link-menu:hover {
+.navbar.barra-navegacion .nav-link.link-menu:hover {
   color: #c2b59b;
   text-decoration: underline;
 }
 
 /* Botón hamburguesa */
-.navbar-toggler {
+.navbar.barra-navegacion .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.4);
-}
-
-/* margen  */
-.navbar {
-  margin-bottom: 0;
-}
-
-/* COLOR DEL LOGO */
-.barra-navegacion {
-  --bs-navbar-brand-color: #dad7c3;
-  --bs-navbar-brand-hover-color: #dad7c3;
-}
-
-.barra-navegacion .navbar-brand.logo-principal {
-  color: var(--bs-navbar-brand-color);
-}
-
-/* Logo: forzar color sobre Bootstrap */
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:visited,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:hover,
-.navbar.navbar-dark.barra-navegacion .navbar-brand.logo-principal:focus {
-  color: #c2b59b;
-  text-decoration: none;
-}
-
-.navbar {
-  --bs-navbar-brand-color: #c2b59b;
-  --bs-navbar-brand-hover-color: #c2b59b;
 }
 
 /*  PORTADA  */
