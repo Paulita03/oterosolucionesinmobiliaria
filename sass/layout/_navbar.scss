@@ -1,21 +1,24 @@
 @use "../utilities/variables" as *; 
 
 
-/* NAVBAR BOOTSTRAP (barra negra + logo beige) */
-.navbar.barra-navegacion {
-  margin-bottom: 0;
-}
+/* NAVBAR  */
 
-/* Si querés el negro exacto de tu diseño (en vez del bg-dark de Bootstrap) */
-.navbar.barra-navegacion.bg-dark {
+.barra-navegacion {
   background-color: #1e1e1e;
+  margin-bottom: 0;
+
+  /*  BOOTSTRAP COLORES */
+  --bs-navbar-brand-color: #{$color_beige_principal};
+  --bs-navbar-brand-hover-color: #{$color_beige_principal};
+
+  --bs-navbar-color: #{$color_texto_nav_claro};
+  --bs-navbar-hover-color: #{$color_beige_principal};
+
+  --bs-navbar-active-color: #{$color_beige_principal};
 }
 
-/* Logo beige (gana siempre) */
-.navbar.barra-navegacion .navbar-brand.logo-principal,
-.navbar.barra-navegacion .navbar-brand.logo-principal:hover,
-.navbar.barra-navegacion .navbar-brand.logo-principal:focus,
-.navbar.barra-navegacion .navbar-brand.logo-principal:visited {
+/* Logo */
+.barra-navegacion .navbar-brand.logo-principal {
   color: $color_beige_principal;
   font-size: $tamano_marca_navbar;
   font-weight: 600;
@@ -24,19 +27,27 @@
 }
 
 /* Links */
-.navbar.barra-navegacion .nav-link.link-menu {
+.barra-navegacion .nav-link.link-menu {
   color: $color_texto_nav_claro;
   font-size: $tamano_texto_chico;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: color 0.25s ease;
 }
 
-.navbar.barra-navegacion .nav-link.link-menu:hover {
+/* Hover beige (MISMO del logo) */
+.barra-navegacion .nav-link.link-menu:hover,
+.barra-navegacion .nav-link.link-menu:focus {
   color: $color_beige_principal;
-  text-decoration: underline;
 }
 
-/* Botón hamburguesa */
-.navbar.barra-navegacion .navbar-toggler {
+/* Activo (página actual) */
+.barra-navegacion .nav-link.link-menu.active {
+  color: $color_beige_principal;
+  font-weight: 600;
+}
+
+/* Hamburguesa */
+.barra-navegacion .navbar-toggler {
   border-color: $color_borde_navbar;
 }

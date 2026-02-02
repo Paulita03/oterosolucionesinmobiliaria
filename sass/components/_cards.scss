@@ -161,3 +161,24 @@
 .card-venta button {
   align-self: center;
 }
+
+/* PROPIEDADES DESTACADAS – título y subtítulo */
+.titulo-propiedades {
+  color:#2f4a46; /* oliva oscuro */
+}
+
+.subtitulo-propiedades {
+  color: #2f4a46; /* oliva oscuro */
+  font-weight: 500;
+}
+
+.card-propiedad .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card-propiedad .carousel img {
+  height: 220px;
+  object-fit: cover;
+}

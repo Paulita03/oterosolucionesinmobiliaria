@@ -92,21 +92,20 @@ iframe {
   text-decoration: underline;
 }
 
-/* NAVBAR BOOTSTRAP (barra negra + logo beige) */
-.navbar.barra-navegacion {
-  margin-bottom: 0;
-}
-
-/* Si querés el negro exacto de tu diseño (en vez del bg-dark de Bootstrap) */
-.navbar.barra-navegacion.bg-dark {
+/* NAVBAR  */
+.barra-navegacion {
   background-color: #1e1e1e;
+  margin-bottom: 0;
+  /*  BOOTSTRAP COLORES */
+  --bs-navbar-brand-color: #c2b59b;
+  --bs-navbar-brand-hover-color: #c2b59b;
+  --bs-navbar-color: #e6e6e6;
+  --bs-navbar-hover-color: #c2b59b;
+  --bs-navbar-active-color: #c2b59b;
 }
 
-/* Logo beige (gana siempre) */
-.navbar.barra-navegacion .navbar-brand.logo-principal,
-.navbar.barra-navegacion .navbar-brand.logo-principal:hover,
-.navbar.barra-navegacion .navbar-brand.logo-principal:focus,
-.navbar.barra-navegacion .navbar-brand.logo-principal:visited {
+/* Logo */
+.barra-navegacion .navbar-brand.logo-principal {
   color: #c2b59b;
   font-size: 26px;
   font-weight: 600;
@@ -115,20 +114,28 @@ iframe {
 }
 
 /* Links */
-.navbar.barra-navegacion .nav-link.link-menu {
+.barra-navegacion .nav-link.link-menu {
   color: #e6e6e6;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: color 0.25s ease;
 }
 
-.navbar.barra-navegacion .nav-link.link-menu:hover {
+/* Hover beige (MISMO del logo) */
+.barra-navegacion .nav-link.link-menu:hover,
+.barra-navegacion .nav-link.link-menu:focus {
   color: #c2b59b;
-  text-decoration: underline;
 }
 
-/* Botón hamburguesa */
-.navbar.barra-navegacion .navbar-toggler {
+/* Activo (página actual) */
+.barra-navegacion .nav-link.link-menu.active {
+  color: #c2b59b;
+  font-weight: 600;
+}
+
+/* Hamburguesa */
+.barra-navegacion .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -493,6 +500,27 @@ footer a {
 .card-alquiler button,
 .card-venta button {
   align-self: center;
+}
+
+/* PROPIEDADES DESTACADAS – título y subtítulo */
+.titulo-propiedades {
+  color: #2f4a46; /* oliva oscuro */
+}
+
+.subtitulo-propiedades {
+  color: #2f4a46; /* oliva oscuro */
+  font-weight: 500;
+}
+
+.card-propiedad .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card-propiedad .carousel img {
+  height: 220px;
+  object-fit: cover;
 }
 
 /*  CONTACTO  */
