@@ -1,11 +1,16 @@
 @use "../utilities/variables" as *; 
 @use "../utilities/mixin" as *; 
 
+
+/* PROPIEDADES (INDEX) */
+
 .card-propiedad {
   max-width: $ancho_card_max;
-
   @include card_simple;
   padding: $padding_medio;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-propiedad img {
@@ -24,32 +29,33 @@
   margin-bottom: $margen_chico;
 }
 
-.card-propiedad button {
-  @include boton_simple;
-
-  padding: 8px 12px;
-  background-color: $color_verde_principal;
-  color: $fondo_blanco;
+/* Carrusel dentro de la card */
+.card-propiedad .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.card-propiedad button:hover {
-  background-color: $color_verde_hover;
+.card-propiedad .carousel img {
+  height: 220px;
+  object-fit: cover;
 }
 
-/*  ALQUILER CARDS  */
 
+/* ALQUILERES */
 
 .card-alquiler {
   width: $ancho_card;
   border: 1px solid $color_borde_suave;
-  padding: 15px;
-
   @include card_simple;
 
   background-color: $fondo_blanco;
   border-radius: $radio_extra;
   padding: $padding_medio;
   box-shadow: $sombra_card_media;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-alquiler img {
@@ -76,33 +82,22 @@
   font-weight: 500;
 }
 
-.card-alquiler button {
-  @include boton_simple;
-
-  background-color: $color_beige_principal;
-  color: $color_negro_base;
-  padding: 10px 14px;
-  font-size: $tamano_texto_base;
-}
-
-.card-alquiler button:hover {
-  background-color: $color_beige_hover;
-}
-
 .card-alquiler:hover {
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
 
-/*  VENTA CARDS  */
+/* VENTAS */
 
 .card-venta {
   width: $ancho_card;
   border: 1px solid $color_borde_suave;
   padding: 15px;
-
   @include card_simple;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-venta img {
@@ -132,53 +127,37 @@
   margin-bottom: $margen_chico;
 }
 
-/* Botón */
-.card-venta button {
-  @include boton_simple;
 
-  padding: 10px 14px;
-  background-color: $color_negro_base;
-  color: $fondo_blanco;
-  border-radius: $radio_chico;
-  font-size: $tamano_texto_base;
-}
-
-.card-venta button:hover {
-  background-color: #000000;
-}
-
-
-/* BOTONES CENTRADOS */
-.card-propiedad,
-.card-alquiler,
-.card-venta {
-  display: flex;
-  flex-direction: column;
-}
+/* BOTÓN "CONSULTAR"  */
 
 .card-propiedad button,
 .card-alquiler button,
 .card-venta button {
+  @include boton_simple;
+
+  padding: 10px 14px;
+  background-color: $color_verde_principal; 
+  color: $fondo_blanco;
+  font-size: $tamano_texto_base;
+
   align-self: center;
 }
 
+/* Hover */
+.card-propiedad button:hover,
+.card-alquiler button:hover,
+.card-venta button:hover {
+  background-color: $color_verde_hover;
+}
+
+
 /* PROPIEDADES DESTACADAS – título y subtítulo */
+
 .titulo-propiedades {
-  color:#2f4a46; /* oliva oscuro */
+  color: #2f4a46; /* oliva oscuro */
 }
 
 .subtitulo-propiedades {
   color: #2f4a46; /* oliva oscuro */
   font-weight: 500;
-}
-
-.card-propiedad .carousel {
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.card-propiedad .carousel img {
-  height: 220px;
-  object-fit: cover;
 }

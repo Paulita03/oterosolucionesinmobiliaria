@@ -341,12 +341,15 @@ footer a {
     text-align: center;
   }
 }
+/* PROPIEDADES (INDEX) */
 .card-propiedad {
   max-width: 350px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-propiedad img {
@@ -365,24 +368,22 @@ footer a {
   margin-bottom: 10px;
 }
 
-.card-propiedad button {
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 8px 12px;
-  background-color: #3f5f5a;
-  color: #ffffff;
+/* Carrusel dentro de la card */
+.card-propiedad .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.card-propiedad button:hover {
-  background-color: #2f4a46;
+.card-propiedad .carousel img {
+  height: 220px;
+  object-fit: cover;
 }
 
-/*  ALQUILER CARDS  */
+/* ALQUILERES */
 .card-alquiler {
   width: 300px;
   border: 1px solid #ddd;
-  padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -390,6 +391,8 @@ footer a {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-alquiler img {
@@ -416,26 +419,12 @@ footer a {
   font-weight: 500;
 }
 
-.card-alquiler button {
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #c2b59b;
-  color: #1e1e1e;
-  padding: 10px 14px;
-  font-size: 14px;
-}
-
-.card-alquiler button:hover {
-  background-color: #b1a487;
-}
-
 .card-alquiler:hover {
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
-/*  VENTA CARDS  */
+/* VENTAS */
 .card-venta {
   width: 300px;
   border: 1px solid #ddd;
@@ -443,6 +432,8 @@ footer a {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-venta img {
@@ -472,34 +463,25 @@ footer a {
   margin-bottom: 10px;
 }
 
-/* Botón */
+/* BOTÓN "CONSULTAR"  */
+.card-propiedad button,
+.card-alquiler button,
 .card-venta button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 14px;
-  background-color: #1e1e1e;
+  background-color: #3f5f5a;
   color: #ffffff;
-  border-radius: 4px;
   font-size: 14px;
-}
-
-.card-venta button:hover {
-  background-color: #000000;
-}
-
-/* BOTONES CENTRADOS */
-.card-propiedad,
-.card-alquiler,
-.card-venta {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-propiedad button,
-.card-alquiler button,
-.card-venta button {
   align-self: center;
+}
+
+/* Hover */
+.card-propiedad button:hover,
+.card-alquiler button:hover,
+.card-venta button:hover {
+  background-color: #2f4a46;
 }
 
 /* PROPIEDADES DESTACADAS – título y subtítulo */
@@ -510,17 +492,6 @@ footer a {
 .subtitulo-propiedades {
   color: #2f4a46; /* oliva oscuro */
   font-weight: 500;
-}
-
-.card-propiedad .carousel {
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.card-propiedad .carousel img {
-  height: 220px;
-  object-fit: cover;
 }
 
 /*  CONTACTO  */
