@@ -41,6 +41,26 @@
   object-fit: cover;
 }
 
+/* BLOQUE PROPIEDADES DESTACADAS (INDEX) */
+
+.bloque-propiedades {
+  background-color: $fondo_gris_muy_claro;
+  padding: $padding_seccion 0;
+}
+
+.contenedor-propiedades-bloque {
+  max-width: $ancho_maximo_contenido;
+  margin: 0 auto;
+  padding: 0 $padding_medio;
+}
+
+.contenedor-propiedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $gap_grande;
+  justify-items: center;
+}
+
 
 /* ALQUILERES */
 
