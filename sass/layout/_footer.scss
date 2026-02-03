@@ -2,53 +2,84 @@
 
 /*  FOOTER  */
 
-footer {
+
+.footer-principal {
   background-color: $color_negro_base;
-  padding: 50px 40px;
-  margin-top: 80px;
+  border-top: $borde_superior_footer solid $color_verde_hover;
+  margin-top: $margen_seccion;
+  padding-top: $padding_grande;
+  color: $color_texto_gris_claro;
 }
 
-footer .contacto {
+.footer-contenido {
   max-width: $ancho_maximo_contenido;
   margin: 0 auto;
+  padding: 0 $padding_medio;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gap_grande;
 }
 
-footer h3 {
-  color: $fondo_blanco;
-  font-size: $tamano_titulo_chico;
-  margin-bottom: $margen_medio;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer li {
-  color: $color_texto_gris_claro;
-  font-size: $tamano_texto_medio;
+.footer-marca h3 {
+  color: $color_beige_principal;
+  font-size: $tamano_texto_grande;
   margin-bottom: $margen_chico;
 }
 
-footer a {
+.footer-marca p {
+  font-size: $tamano_texto_base;
+  color: $color_texto_gris;
+  max-width: 360px;
+  line-height: 1.4;
+}
+
+.footer-contacto h4 {
   color: $fondo_blanco;
+  font-size: $tamano_texto_base;
+  margin-bottom: $margen_chico;
+}
+
+.footer-contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contacto li {
+  font-size: $tamano_texto_base;
+  margin-bottom: 8px;
+  color: $color_texto_gris_claro;
+}
+
+.footer-contacto a {
+  color: $color_beige_principal;
   text-decoration: none;
   font-weight: 500;
 }
 
-footer a:hover {
+.footer-contacto a:hover {
   text-decoration: underline;
 }
 
-footer {
-  background-color: $color_negro_base;
-  border-top: $borde_superior_footer solid $color_verde_principal;
+/* Línea inferior */
+.footer-copy {
+  margin-top: $margen_grande;
+  padding: $padding_chico 0;
+  text-align: center;
+  font-size: 12px;
+  color: $color_texto_gris;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-footer h3 {
-  color: $fondo_blanco;
-}
+/* Responsive */
+@media (max-width: $corte_mobile) {
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-footer a {
-  color: $color_link_footer;
+  .footer-marca p {
+    margin: 0 auto;
+  }
 }
