@@ -43,35 +43,31 @@
     <main class="contacto-page">
 
         <section>
-
             <h2>Contacto</h2>
             <p>Comunicate con nosotros para recibir asesoramiento personalizado.</p>
-
         </section>
 
         <section>
-
             <form class="contacto-form">
 
                 <div>
-                    <label>Nombre</label>
-                    <input type="text">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
 
                 <div>
-                    <label>Email</label>
-                    <input type="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
                 </div>
 
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
 
             </form>
-
         </section>
 
     </main>
